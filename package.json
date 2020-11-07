@@ -10,7 +10,7 @@
   "author": "anbreaker",
   "license": "ISC",
   "bin": {
-    "phrasekeepcoding": "bin/global.js"
+    "phrase-keepcoding": "bin/global.js"
   },
   "preferGlobal": true,
   "dependencies": {
