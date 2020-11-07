@@ -10,11 +10,10 @@
   "author": "anbreaker",
   "license": "ISC",
   "bin": {
-    "rdm": "bin/global.js"
+    "phrasekeepcoding": "bin/global.js"
   },
   "preferGlobal": true,
   "dependencies": {
-    "fs-extra": "^9.0.1",
     "node-fetch": "^2.6.1"
   },
   "devDependencies": {},

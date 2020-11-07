@@ -1,4 +1,4 @@
-const fs = require('fs-extra');
+const {writeFileSync, readFile} = require('fs');
 const fetch = require('node-fetch');
 
 const phrasesKeepcodingNet =
@@ -6,11 +6,11 @@ const phrasesKeepcodingNet =
 
 fetch(phrasesKeepcodingNet)
   .then((response) => response.text())
-  .then(async (data) => {
+  .then((data) => {
     try {
-      await fs.writeFileSync('nerdquotesKeepCodingGit.md', data);
+      writeFileSync('nerdquotesKeepCodingGit.md', data);
 
-      await fs.readFile('nerdquotesKeepCodingGit.md', 'utf-8', (error, data) => {
+      readFile('nerdquotesKeepCodingGit.md', 'utf-8', (error, data) => {
         if (error) console.error('Error, Unread Data :( ', error.code);
 
         const phrases = [...data.matchAll(/(<p>)\w\s?(.+)(<\/p>)$/gm)];

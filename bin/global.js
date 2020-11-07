@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-const rdm = require('../phraseRandomKeepCoding.js');
+const phraseKeepcoding = require('../phraseRandomKeepCoding.js');
 
-rdm.phraseRandomKeepCoding();
+phraseKeepcoding.phraseRandomKeepCoding();
