@@ -21,19 +21,13 @@
 ## Install
 
 ```sh
-npm install -g rdm
+npm install -g phrase-keepcoding
 ```
 
 ## Usage
 
 ```sh
-rdm
-```
-
-## Run tests
-
-```sh
-npm run test
+phrase-keepcoding
 ```
 
 ## Author
