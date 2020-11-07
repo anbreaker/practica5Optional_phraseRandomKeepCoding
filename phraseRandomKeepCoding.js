@@ -22,7 +22,7 @@ fetch(phrasesKeepcodingNet)
   })
   .catch((error) => console.error(error));
 
-const phraseRandomKeepCoding = (phrases) => {
+const phraseRandomKeepCoding = (phrases = ' ') => {
   const numPhrases = phrases.length;
   const randomPhrase = Math.floor(Math.random() * numPhrases);
   console.log(phrases[randomPhrase][0].replace('<p>', '').replace('</p>', ''));
